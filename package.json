@@ -1,0 +1,19 @@
+{
+  "name": "e2e-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ooooorobo/e2e-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ooooorobo/e2e-poc/issues"
+  },
+  "homepage": "https://github.com/ooooorobo/e2e-poc#readme"
+}
