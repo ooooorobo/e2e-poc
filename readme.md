@@ -1,29 +1,31 @@
-서브모듈 연결
-
-```bash
-git submodule update --init
-```
-
-서브모듈 빌드
-
+최초 실행 시에만
 ```bash
 git submodule update --init
 
 cd module
-#npm ci
+npm ci
 npm run build
 npm pack ./packages/playwright-core
 npm pack ./packages/playwright-test
+
+cd ../src
+npm i -D ../module/playwright-core-1.33.0-next.tgz
+npm i -D ../module/playwright-test-1.33.0-next.tgz
+
+# e2e-poc/src/node_modules/playwright-core/.local-browsers 경로에 브라우저 설치
+PLAYWRIGHT_BROWSERS_PATH=$HOME/pw-browsers npx playwright install
 ```
 
-패키지 설치하기
-
+서브모듈만 빌드 후 재설치
 ```bash
-cd src
-npm remove @playwright/test
-npm remove playwright-core
-npm i -D ../packs/playwright-core-1.33.0-next.tgz
-npm i -D ../packs/playwright-test-1.33.0-next.tgz
-#PLAYWRIGHT_BROWSERS_PATH=$HOME/pw-browsers npx playwright install
-PLAYWRIGHT_BROWSERS_PATH=$HOME/pw-browsers npx playwright test
+cd module
+npm run build
+npm pack ./packages/playwright-core
+npm pack ./packages/playwright-test
+
+cd ../src
+npm uninstall @playwright/test
+npm uninstall playwright-core
+npm i -D ../module/playwright-core-1.33.0-next.tgz
+npm i -D ../module/playwright-test-1.33.0-next.tgz
 ```

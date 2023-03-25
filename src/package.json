@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "PLAYWRIGHT_BROWSERS_PATH=$HOME/pw-browsers npx playwright test",
+    "codegen": "PLAYWRIGHT_BROWSERS_PATH=$HOME/pw-browsers npx playwright codegen"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,8 @@
   },
   "homepage": "https://github.com/ooooorobo/e2e-poc#readme",
   "devDependencies": {
-    "@playwright/test": "file:../packs/playwright-test-1.33.0-next.tgz",
-    "playwright-core": "file:../packs/playwright-core-1.33.0-next.tgz",
+    "@playwright/test": "file:../module/playwright-test-1.33.0-next.tgz",
+    "playwright-core": "file:../module/playwright-core-1.33.0-next.tgz",
     "typescript": "^5.0.2"
   }
 }
