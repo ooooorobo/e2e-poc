@@ -1,12 +1,13 @@
 서브모듈 연결
 
-```sh
+```bash
 git submodule update --init
 ```
 
 서브모듈 빌드
 
-```shell
+```bash
 cd module
+npm ci
 npm run build
 ```
