@@ -13,7 +13,7 @@ npm i -D ../module/playwright-core-1.33.0-next.tgz
 npm i -D ../module/playwright-test-1.33.0-next.tgz
 
 # e2e-poc/src/node_modules/playwright-core/.local-browsers 경로에 브라우저 설치
-PLAYWRIGHT_BROWSERS_PATH=$HOME/pw-browsers npx playwright install
+PLAYWRIGHT_BROWSERS_PATH=0 npx playwright install
 ```
 
 서브모듈만 빌드 후 재설치
