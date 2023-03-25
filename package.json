@@ -16,7 +16,6 @@
     "url": "https://github.com/ooooorobo/e2e-poc/issues"
   },
   "homepage": "https://github.com/ooooorobo/e2e-poc#readme",
-  "packageManager": "yarn@3.5.0",
   "devDependencies": {
     "typescript": "^5.0.2"
   }
