@@ -8,3 +8,6 @@
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+.packs
+src/node_modules

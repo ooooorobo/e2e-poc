@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/ooooorobo/e2e-poc#readme",
   "devDependencies": {
+    "@playwright/test": "file:../packs/playwright-test-1.33.0-next.tgz",
+    "playwright-core": "file:../packs/playwright-core-1.33.0-next.tgz",
     "typescript": "^5.0.2"
   }
 }
